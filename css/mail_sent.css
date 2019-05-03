@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/geo_sans_light/GeosansLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/indie_flower/IndieFlower.ttf') format('truetype'),
+    url('../fonts/indie_flower/IndieFlower.woff') format('woff');
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #212322;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #212322;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #d2cc83;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-family: 'GeosansLight', Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: coral;
+}
+.popup .contenu {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-device-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}

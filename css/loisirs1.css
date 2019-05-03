@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/geo_sans_light/GeosansLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/indie_flower/IndieFlower.ttf') format('truetype'),
+    url('../fonts/indie_flower/IndieFlower.woff') format('woff');
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes SlideVersGauche {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes SlideVersDroite {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*----------------------- B A L I S E S--------------------------*/
+
+body{
+    height: 100%;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+
+p, li, h1, h2, h3, article a{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin : 0;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 2.25vw;
+    color: #d2cc83;
+}
+
+h3{
+    font-size: 1.75vw;
+    color: #d2cc83;
+    background: rgba(0,0,0,0.3);
+    padding: 0.5vw 1vw 0.5vw;
+    border-radius: 0 10px;
+}
+
+h4{
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 1.75vw;
+    color: #212322;
+    margin: 0;
+    margin-bottom: 2vw;
+}
+
+
+
+a{
+    padding: 0;
+    margin : 0;
+    font-family: 'GeosansLight', sans-serif;
+    text-decoration: none;
+    color: #E1CD00;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 500ms;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
+footer{
+    background: #101820;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D7D2CB;
+}
+
+figure{
+    margin: 0;
+    height: 30vh;
+}
+
+article{
+    background-color: #F1EB9C;
+    color: #212322;
+    padding: 2vw 3vw 4vw;
+}
+
+article a{
+    color: #2460A7;
+}
+
+article a:hover{
+    color: coral;
+}
+
+/*----------------------- C L A S S E S ------------------------*/
+.logo{
+    width: 15vw;
+}
+
+.logo_style2{
+    display: none;
+}
+
+.menu {
+    width: 20%;
+    background: #212322;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu a:hover{
+    transition: 100ms;
+    color: #7B6469;
+}
+
+.principal{
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.corps {
+    display: flex;
+    height: 90%;
+    background: #F1EB9C;
+    overflow: auto;
+}
+
+.corps_texte{
+    width: 50%;
+    padding: 5%;
+}
+
+.corps_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.photo_moi{
+    max-width: 20vw;
+    border-radius: 0 0 5vw 5vw;
+}
+
+.prenom, .nom{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    color: #5E4F47;
+}
+
+.vide_intersideral{
+    height: 5%;
+}
+
+.jackInTheBox {
+    animation-name: jackInTheBox;
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.theme{
+    width: 100%;
+    height: 15vh;
+    background-color: #212322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    background-image: url("../images/mma.jpg");
+}
+
+.item2{
+    background-image: url("../images/nba.jpg");
+}
+
+.item3{
+    background-image: url("../images/metro.jpg");
+}
+
+.item4{
+    background-image: url("../images/21.jpg");
+}
+
+.parallax{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.iGetMoneyCauseImRichNigga{
+    width: 100%;
+    margin-top: 2vh;
+}
+
+#chargement {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: #212322;
+}
+
+.ziouziou {
+    width: 25%;
+}
+
+@media screen and (min-device-width: 701px) and (max-device-width: 1000px ) {
+    .vide_intersideral {
+        height: 25%;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+
+    p, a, label{
+        font-size: 2.75vw;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    h4{
+        font-size: 3vw;
+    }
+
+    .menu a{
+        font-size: 2vw;
+    }
+
+    .photo_moi{
+        width: 30vw;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logobi_GT{
+        height: 20vw;
+    }
+
+    .vide_intersideral{
+        height: 30%;
+    }
+}

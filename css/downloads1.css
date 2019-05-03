@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/geo_sans_light/GeosansLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/indie_flower/IndieFlower.ttf') format('truetype'),
+    url('../fonts/indie_flower/IndieFlower.woff') format('woff');
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*----------------------- B A L I S E S--------------------------*/
+
+body{
+    height: 100%;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+
+p, li, h1, h2, h3, span{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin : 0;
+}
+
+h2{
+    padding: 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    background: #212322;
+    color: #E1CD00;
+    font-size : 2.25vw;
+    margin-bottom: 1.75vw;
+}
+
+h3{
+    font-size: 1.75vw;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+    font-family: 'GeosansLight', sans-serif;
+    text-decoration: none;
+    color: #E1CD00;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 500ms;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
+span{
+    font-size: 1.5vw;
+    color: #C2C2C2;
+}
+
+article{
+    background: #D0D3D4;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid hidden hidden;
+    border-color: #212322;
+    border-width: 0.3vw;
+}
+
+footer{
+    background: #101820;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D7D2CB;
+}
+
+em{
+    font-weight: bolder;
+}
+
+/*----------------------- C L A S S E S ------------------------*/
+.logo{
+    width: 15vw;
+}
+
+.logo_style2{
+    display: none;
+}
+
+.menu {
+    width: 20%;
+    background: #212322;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu a:hover{
+    transition: 100ms;
+    color: #7B6469;
+}
+
+.principal{
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.corps {
+    display: flex;
+    height: 90%;
+    background: #F1EB9C;
+    overflow: auto;
+}
+
+.corps_texte{
+    width: 50%;
+    padding: 5%;
+}
+
+.corps_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.photo_moi{
+    max-width: 20vw;
+    border-radius: 0 0 5vw 5vw;
+}
+
+.prenom, .nom{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    color: #5E4F47;
+}
+
+.vide_intersideral{
+    height: 5%;
+}
+
+.dl{
+    width: 4vw;
+    transition: 0.1s ease-out;
+}
+
+.dl:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.description{
+    font-size: 1vw;
+}
+
+.sub_description{
+    margin-top: 1vw;
+    font-size: 0.75vw;
+    text-align: center;
+    width: 50%;
+}
+
+.dl_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download{
+    display: flex;
+    min-height: 10vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    width: 50%;
+}
+
+.jackInTheBox {
+    animation-name: jackInTheBox;
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.dl2 {
+    display: none;
+}
+
+#chargement {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: #212322;
+}
+
+.ziouziou {
+    width: 25%;
+}
+
+@media screen and (min-device-width: 701px) and (max-device-width: 1000px ) {
+
+    p{
+        font-size: 2vw;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 2.75vw;
+    }
+
+    .vide_intersideral {
+        height: 25%;
+    }
+
+    .description{
+        font-size: 1.75vw;
+    }
+
+    .sub_description{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+    p, a, label{
+        font-size: 2.75vw;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 2.75vw;
+    }
+
+    .menu a{
+        font-size: 2vw;
+    }
+
+    .vide_intersideral{
+        height: 30%;
+    }
+
+    .description{
+        font-size: 2vw;
+    }
+
+    .sub_description{
+        font-size: 1.80vw;
+    }
+
+    .download{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}

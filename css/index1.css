@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/geo_sans_light/GeosansLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/indie_flower/IndieFlower.ttf') format('truetype'),
+    url('../fonts/indie_flower/IndieFlower.woff') format('woff');
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes SlideVersGauche {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes SlideVersDroite {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+body{
+    height: 100%;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+
+p, li, h1, h2, h3, label{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin : 0;
+}
+
+label{
+    font-size: 2vw;
+    color: #888;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+a{
+    padding: 0;
+    margin : 0;
+    font-family: 'GeosansLight', sans-serif;
+    text-decoration: none;
+    color: #E1CD00;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 500ms;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
+
+footer{
+    background: #101820;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D7D2CB;
+}
+
+article, .contenu{
+     margin: 0.5vw;
+     padding: 2vw 1vw 2vw;
+     background: rgba(0,0,0,0.05);
+     color: #212322;
+     border-radius: 1vw;
+     display:flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+.contenu p{
+    padding: 2vw 0 2vw;
+}
+
+iframe{
+    width: 30%;
+    height: 15vw;
+    margin: 0 2vw 2vw;
+    border: 1px solid coral;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+/*----------------------- C L A S S E S ------------------------*/
+.logo{
+    width: 15vw;
+}
+
+.logo_style2{
+    display: none;
+}
+
+.menu {
+    width: 20%;
+    background: #212322;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu a:hover{
+    color: #7B6469;
+    transition: 100ms;
+}
+
+.principal{
+    width: 80%;
+    height: 100vh;
+}
+
+.corps {
+    display: flex;
+    height: 90%;
+    background: #F1EB9C;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.corps_texte{
+    padding: 5% 5% 0;
+    width: 40%;
+}
+
+.corps_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0 0 5%;
+}
+
+.photo_moi{
+    width: 20vw;
+    border-style: hidden solid solid;
+    border-color: #212322;
+    border-width: 0.3vw;
+    border-radius: 0 0 5vw 5vw;
+}
+
+.prenom, .nom{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    color: #5E4F47;
+}
+
+.vide_intersideral{
+    height: 5%;
+}
+
+.jackInTheBox {
+    animation-name: jackInTheBox;
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.titre{
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.vie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #212322;
+    color: #F1EB9C;
+    margin: 1vw 0 1vw;
+}
+
+.description{
+    width: 50%;
+}
+
+.RE, .UB, .UB2{
+    height: 4vw;
+}
+
+.UB2{
+    display: none;
+}
+
+.Logobi_GT{
+    height: 16vw;
+    margin: 2vw;
+}
+
+.contact_infos h3{
+    margin: 2vw 2vw 0;
+    font-size: 3vw;
+}
+
+.contact_infos p, .mail{
+    padding: 2vw 2vw 0;
+}
+
+.bloc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 1vw;
+}
+
+.mail{
+    color: cornflowerblue;
+}
+
+.pourbouton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+}
+
+/* hide input */
+input.radio:empty {
+    display: none;
+}
+
+/* style label */
+input.radio:empty ~ label {
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    cursor: pointer;
+    user-select: none;
+}
+
+input.radio:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #212322;
+    background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+    color: #212322;
+}
+
+.bouton{
+    margin-right: 10%;
+}
+
+#chargement {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: #212322;
+}
+
+.ziouziou {
+    width: 25%;
+}
+
+#jobs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+#jobs p{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bar p{
+    font-size: 1vw;
+}
+
+@media screen and (min-device-width: 701px) and (max-device-width: 1000px ) {
+    .vide_intersideral {
+        height: 25%;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+
+    p, a, label, .corps_texte p{
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    .titre{
+        font-size: 3.25vw;
+    }
+
+    .menu a{
+        font-size: 2vw;
+    }
+
+    .photo_moi{
+        width: 30vw;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logobi_GT{
+        height: 20vw;
+    }
+
+    .corps_texte .prenom, .corps_texte .nom{
+        font-size: 5vw;
+    }
+
+    .bar p {
+        font-size: 2.25vw;
+    }
+
+    .vide_intersideral{
+        height: 30%;
+    }
+
+    iframe{
+        width: 25vw;
+        height: 17vw;
+    }
+}

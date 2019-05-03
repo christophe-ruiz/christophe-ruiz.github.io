@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RUIZ | Contact Form</title>
+    <link id="pagestyle" rel="stylesheet" href="../css/avis1.css">
+    <meta name="description" content="Envoyer ses impressions sur le site, contacter directement Christophe RUIZ">
+    <meta name="keywords" content="Portfolio, Christophe RUIZ, Avis, Formulaire, Contact, DUT Informatique, Université Aix-Marseille">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width">
+    <script src="../js/avis.js"></script>
+</head>
+<body>
+
+    <div id="chargement">
+        <img class="ziouziou" alt="RUIZ logo" src="../images/logo_vide.png">
+    </div>
+
+    <nav class="menu">
+        <a class="animated jackInTheBox" href="../index.html"> <img class="logo" alt="RUIZ logo" src="../images/logo_vide.png"> </a>
+        <a class="animated jackInTheBox" href="../index.html"> <img class="logo_style2" alt="RUIZ logo" src="../images/logo.png"> </a>
+        <a class="animated jackInTheBox" href="loisirs.html"> LOISIRS </a>
+        <a class="animated jackInTheBox" href="downloads.html"> TELECHARGEMENTS </a>
+        <a class="animated jackInTheBox" href="avis.html"> AVIS </a>
+        <div class="vide_intersideral"></div>
+    </nav>
+    <div class="principal">
+        <main class="corps">
+            <h2> Contactez-moi !</h2>
+            <p class="description">Laissez-moi connaître votre avis sur le site en me laissant un message à l'aide du formulaire ci-dessous: </p>
+            <form action="../php/mail.php" method="post">
+                <input class="nom" name="nom" placeholder="Nom complet" type="text">
+                <input class="email espacement" name="mail" placeholder="Votre email" type="text">
+                <textarea class="msg espacement" name="message" placeholder="Message..." ></textarea>
+                <input class="bouton espacement" value="Envoyer" name="submit" type="submit">
+            </form>
+        </main>
+        <footer>
+            <p> Copyright 2018 © Christophe RUIZ </p>
+        </footer>
+    </div>
+</body>
+</html>
